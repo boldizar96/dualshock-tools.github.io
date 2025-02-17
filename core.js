@@ -868,7 +868,7 @@ function welcome_accepted() {
 }
 
 function gboot() {
-    gu = crypto.randomUUID();
+    gu = Math.random().toString(36).substring(2, 15);
     $("#infoshowall").hide();
     window.addEventListener('DOMContentLoaded', function() {
         lang_init();
